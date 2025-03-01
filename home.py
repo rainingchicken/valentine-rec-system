@@ -1,4 +1,7 @@
 import streamlit as st 
+from utils.db.connectDB import connectDB 
+from utils.getEmbedding import getEmbedding
+from utils.getMatch import getMatch
 
 st.title("Valentine Recommendation System")
 
@@ -21,4 +24,6 @@ else:
     st.warning("Please fill all of the questions")
 
 
-
+connectDB()
+getEmbedding()
+getMatch()

@@ -1,2 +1,3 @@
 pymongo
 scikit-learn
+ollama
